@@ -82,6 +82,23 @@
     padding: 15px 15px 15px 20px;
     border-left: 2px solid;
   }
+
+
+  .footer .footer_top{
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+
+  .footer .footer_widget p{
+    font-size: smaller;
+  }
+
+  a{
+    color: #AAB1B7;
+  }
+  a:hover{
+    color: red;
+  }
 </style>
 
 <!-- Shows display the intro of the sponsor -->
@@ -223,6 +240,7 @@
           <img src="img/sponsor/airchina.png" alt="" onclick="addDescprition('airchina','display_valuable','description_valuable')" />
         </div>
         <div id="airchina" style="display: none;">
+          <h3>"中国国际航空 "</h3>
           <p>国航是中国唯一载国旗飞行的民用航空公司以及世界最大的航空联盟 ——星空联盟成员、 2008年北京奥运会 和残奥会官方 航空客运合作伙伴 、 2022年北京冬奥会和冬残奥会官方 航空客运合作伙伴，具有国
             内航空公司第一的品牌价值 (世界品牌实 验室 2019年6月评测为 1678.76 亿元 )， 在航空客运、货运及相关服务诸方面，均处于国内领先地位。
             截至 2019 年6月30日，国航（含控股公司）共拥有以波音、空中客车为主的各型飞机676架，平均机龄6. 81年；经营客运航线已达766条，其中国际航线132条，地区航线29 条，国内航线605条，通航国家（地区）
@@ -234,6 +252,7 @@
         </div>
         <div id="ONPS" style="display: none;">
           <p>
+            <h3>"ONPS国际暑期学校平台 "</h3>
             ONPS国际暑期学校平台（简称ONPS）由一批毕业于哈佛大学、布兰迪斯大学、英属哥伦比亚大学等怀有教育梦想的创业青年于2010年创立，是北京森培未来教育科技有限公司旗下先锋品牌。
             ONPS以“帮助更多学生在全球化格局下定位自己探索未来”为愿景，秉承推进世界教育交流与合作的理念，整合全球优质教育资源，致力打造优质、实用教育产品，为新时代青年学者提供全球化高品质教育服务，
             帮助不同种族、不同经济条件、不同信仰的学生塑造世界公民的价值观。
@@ -257,11 +276,11 @@
 
       <div class="row">
         <div class="col-lg-12">
-          <div class="sponsor_logo_container">
-            <div class="text-center ">
+          <div class=" row justify-content-center">
+            <div  class="sponsor_logo_Air" style="">
               <img src="img/sponsor/giga.png" alt="" onclick="addDescprition('giga','display_contributory','description_contributory')"/>
-            </div>
             <div id="giga" style="display: none;">
+              <h3>"Giga剧本杀 "</h3>
               <p>
                 Giga剧本杀位于65 Wakefield Street 地下一层。Giga剧本杀不仅拥有海量新本和专业场地，另外Giga网吧拥有超过100台高配电脑和多个麻将包间及其他娱乐项目，是学习工作之余放松休闲社交的绝佳选择。
               </p>
@@ -282,25 +301,35 @@
   <!-- footer_start  -->
   <footer class="footer">
     <div class="footer_top">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-md-8">
-            <div class="footer_widget">
-              <div class="address_details text-center">
-                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                  12 Feb, 2020
-                </h4>
-                <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                  Green Avenue, New York
-                </h3>
-                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                  The event regularly attracts a diverse range of attendees
-                  from around the world.
-                </p>
-                <a href="#" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Buy Tickets</a>
+      <div class="container p-4">
+        <div class="row" >
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="footer_widget">
+                  <h3>About Us</h3>
+                  <p>The New Zealand Chinese Students’ Association (NZCSA) is a charitable student society. The aim of the Association is to serve Chinese students in New Zealand by way of promoting Chinese culture and to act as a bridge between the Chinese student community and the New Zealand mainstream community.</p>
+                </div>
               </div>
-            </div>
-          </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="footer_widget">
+                  <h3>Our Events</h3>
+                  <ul style="color: #fff;">
+                    <li><a href="#">Upcoming Events</a></li>
+                    <li><a href="#">Past Events</a></li>
+                    <li><a href="#">Photo Gallery</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                <div class="footer_widget">
+                  <h3>Join Us</h3>
+                  <ul class="float">
+                    <li><a href="#">Committee</a></li>
+                    <li><a href="joinus.html">Membership</a></li>
+                    <li><a href="joinus.html">Volunteer</a></li>
+                    <li><a href="group.html">WeChat Group</a></li>
+                  </ul>
+                </div>
+              </div>
         </div>
       </div>
     </div>
@@ -308,13 +337,24 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+              </div>
+              <hr>
+            </div>	
             <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              All rights reserved | This template is made with
+              2017
+              All rights reserved
+              <a href="#">NZCSA</a> | This template is made with
               <i class="fa fa-heart-o" aria-hidden="true"></i> by
               <a href="https://colorlib.com" target="_blank">Colorlib</a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
