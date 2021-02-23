@@ -1,4 +1,5 @@
-NZCSA 2021
+<h1>NZCSA 2021</h1>
+<img src="img/career/logo.png">
 
 Department of IT
 
