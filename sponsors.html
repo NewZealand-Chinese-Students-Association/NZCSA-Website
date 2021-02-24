@@ -1,277 +1,377 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>EventCon</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>EventCon</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/slicknav.css">
+  <!-- CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/themify-icons.css" />
+  <link rel="stylesheet" href="css/gijgo.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/slicknav.css" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
+<style>
+
+  .sponsor_logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sponsor_logo_Air img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sponsor_logo_ONPS img {
+    width: 100%;
+    height: auto;
+  }
+
+  .desription_wrap {
+    background: rgba(130, 139, 178, 0.1);
+    padding: 15px;
+    line-height: 1.733;
+    color: #888888;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .desription_quotes {
+    background: #fff;
+    padding: 15px 15px 15px 20px;
+    border-left: 2px solid;
+  }
+
+
+  .footer .footer_top{
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+
+  .footer .footer_widget p{
+    font-size: smaller;
+  }
+
+  a{
+    color: #AAB1B7;
+  }
+  a:hover{
+    color: red;
+  }
+</style>
+
+<!-- Shows display the intro of the sponsor -->
+<script type="text/javascript">
+  function addDescprition(hiddenDiv,displayDiv,descriptionDiv) {
+    var hiddenDiv = document.getElementById(hiddenDiv);
+    var displayDiv = document.getElementById(displayDiv);
+    var description = document.getElementById(descriptionDiv);
+    description.style.display = "block";
+    displayDiv.innerHTML = hiddenDiv.innerHTML;
+  }
+</script>
+
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container">
-                    <div class="header_bottom_border">
-                        <div class="row align-items-center">
-                            <div class="col-xl-3 col-lg-3">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="img/logo.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="index.html">home</a></li>
-                                            <li><a href="aboutus.html">About Us</a></li>
-                                            <li><a href="sponsors.html">sponsors</a></li>
-                                            <li><a href="career.html">career</a></li>
-                                            <li><a href="events.html">events</a></li>
-                                            
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                <div class="buy_tkt">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a href="#">Join Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-end -->
-
-     <!-- bradcam_area -->
-     <div class="bradcam_area">
-        <div class="single_bradcam  d-flex align-items-center bradcam_bg_1 overlay">
-              <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                       <div class="col-xl-12">
-                          <div class="bradcam_text text-center">
-                            <div class="shape_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <img src="img/shape/shape_1.svg" alt="">
-                            </div>
-                            <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
-                                <img src="img/shape/shape_2.svg" alt="">
-                            </div>
-                                <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Sponsor</h3>
-                          </div>
-                       </div>
-                    </div>
-              </div>
-           </div>
-     </div>
-    <!-- bradcam_area end -->
-
-    <!-- map_area_start  -->
-    <div class="map_area">
-        <div id="map" style="height: 600px; position: relative; overflow: hidden;">
-        
-        </div>
-        <script>
-            function initMap() {
-                var uluru = {
-                    lat: -25.363,
-                    lng: 131.044
-                };
-                var grayStyles = [{
-                        featureType: "all",
-                        stylers: [{
-                                saturation: -90
-                            },
-                            {
-                                lightness: 50
-                            }
-                        ]
-                    },
-                    {
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#ccdee9'
-                        }]
-                    }
-                ];
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: -31.197,
-                        lng: 150.744
-                    },
-                    zoom: 9,
-                    styles: grayStyles,
-                    scrollwheel: false
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
-        </script>
-        <div class="location_information black_bg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-            <h3>Concert 2020</h3>
-            <div class="info_wrap">
-                <div class="single_info">
-                    <span>Vanue:</span>
-                    <p>26/A, Coontum Avenu
-                        New York-2783</p>
-                </div>
-                <div class="single_info">
-                    <span>Phone:</span>
-                    <p>+10 (88) 267 368 283</p>
-                </div>
-                <div class="single_info">
-                    <span>Email:</span>
-                    <p>contact@concert20.com</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- map_area_end  -->
-
-    <!-- brand_area_start  -->
-    <div class="brand_area black_bg">
+  <!-- header-start -->
+  <header>
+    <div class="header-area">
+      <div id="sticky-header" class="main-header-area">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text-center mb-80">
-                        <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Sponsor Logos</h4>
-                    </div>
+          <div class="header_bottom_border">
+            <div class="row align-items-center">
+              <div class="col-xl-3 col-lg-3">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="img/logo.png" alt="" />
+                  </a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="brand_wrap">
-                        <div class="brand_active owl-carousel">
-                            <div class="single_brand text-center">
-                                <img src="img/brand/1.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/2.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/3.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/4.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/5.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/1.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="main-menu d-none d-lg-block">
+                  <nav>
+                    <ul id="navigation">
+                      <li><a href="index.html">home</a></li>
+                      <li><a href="aboutus.html">About Us</a></li>
+                      <li><a href="sponsors.html">sponsors</a></li>
+                      <li><a href="career.html">career</a></li>
+                      <li><a href="events.html">events</a></li>
+                    </ul>
+                  </nav>
                 </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                <div class="buy_tkt">
+                  <div class="book_btn d-none d-lg-block">
+                    <a href="#">Join Us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mobile_menu d-block d-lg-none"></div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- brand_area_end  -->
-    <!-- footer_start  -->
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-8">
-                        <div class="footer_widget">
-                            <div class="address_details text-center">
-                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">12 Feb, 2020</h4>
-                                <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Green Avenue, New York</h3>
-                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">The event regularly attracts a diverse range of attendees from around the world.</p>
-                                <a href="#" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Buy Tickets</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  </header>
+  <!-- header-end -->
+
+  <!-- bradcam_area -->
+  <div class="bradcam_area">
+    <div class="single_bradcam d-flex align-items-center bradcam_bg_1 overlay">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-12">
+            <div class="bradcam_text text-center">
+              <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                Sponsor
+              </h3>
             </div>
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
+            <div class=" text-center">
+              <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                We greatly <b>appreciate</b> the financial support of our partners
+                and sponsors. With your contribution, we are able to ensure
+                that <b>NZCSA</b> continues to provide our members with opportunities
+                for education, mentoring, and networking. In return, we offer
+                valuable visibility for your organization through our general
+                meetings, social media, and more.
+              </p>
             </div>
+          </div>
         </div>
-    </footer>
-    <!-- footer_end  -->
+      </div>
+    </div>
+  </div>
+  <!-- bradcam_area end -->
 
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/gijgo.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/tilt.jquery.js"></script>
-    <script src="js/plugins.js"></script>
+  <!-- Sponsor_logo_start  -->
+  <div  class="brand_area" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title text-center mb-80">
+            <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+              Valuable Sponsors
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center" style="padding-bottom: 80px;">
+        <div class="col-md-2 col col-sm-3 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+          <img src="img/sponsor/zhangshangNZ1.png" alt="" onclick="addDescprition('zhangshangNZ','display_valuable','description_valuable')" />
+        </div>
+        <div id="zhangshangNZ" style="display: none;" class="quote">
+          <h3>"您在新西兰的贴身管家 "</h3>
+          <p>掌上新西兰是一款专门为在新西兰生活的华人而打造的生活服务型软件，通过这款软件用户可以满足订餐、订票、购物和租售的需求，给在新西兰的华人提供了生活服务和交流平台。
+            掌上新西兰拥有独家“合单”黑科技，用户在不同的商家点单，只需要一单的运费，解决了客人纠结的问题。掌上新西兰用专业的技术、到位的服务以及为用户着想的赤诚享誉新西兰。
+          </p>
+        </div>
+        <div class="col-md-2 col-xs-4 col-sm-3 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+          <img src="img/sponsor/yoututor.jpg" alt="" onclick="addDescprition('yoututor','display_valuable','description_valuable')" />
+        </div>
+        <div id="yoututor" style="display: none;">
+          <h3>"在最美的年纪 不和你谈恋爱 只和你谈学习 "</h3>
+          <p>公司介绍：YouTutor是新西兰首家导师团队超200人，立足于留学生需求的专业教育机构。
+            教师团队包括博士、研究生、在校tutor&marker、四大银行、各专业TopStudent及各行业优秀人才，提供大学高中预科全面课程辅导、职业技能培训、求职辅导咨询等全方位服务。
+          </p>
+        </div>
+        <div class="col-md-2 col-xs-1 col-sm-3 sponsor_logo_ONPS wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+          <img src="img/sponsor/cpa.jpg" alt="" onclick="addDescprition('cpa','display_valuable','description_valuable')" />
+        </div>
+        <div id="cpa" style="display: none;">
+          <h3>"百年跨国会计团体 "</h3>
+          <p>澳洲会计师公会成立于 1886 年，在 125 个国家和地区拥有超过 163,000 名会员，其中超过 25,000 名为领导高层， 是全球最大的专业会计团体之一
+            澳洲会计师公会一直致力提供知识交流的平台、发展会员的专业网络、对相关政府政策、标准和法规提出建议，以 及在雇主、政府、监管机构和公众等不同层面推广澳洲注册会计师的价值，从而提升会员的权益及地位。澳洲注册
+            会计师广受国际认可，是商业战略领导才能的标志。
+            公会在澳洲各大城市、香港、北京、上海、广州、印尼、马来西亚、新加坡、越南、新西兰及英国均设有支部或分会。
+          </p>
+        </div>
+        <div class="col-md-3 col-xs-3 col-sm-3  sponsor_logo_Air wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+          <img src="img/sponsor/airchina.png" alt="" onclick="addDescprition('airchina','display_valuable','description_valuable')" />
+        </div>
+        <div id="airchina" style="display: none;">
+          <h3>"中国国际航空 "</h3>
+          <p>国航是中国唯一载国旗飞行的民用航空公司以及世界最大的航空联盟 ——星空联盟成员、 2008年北京奥运会 和残奥会官方 航空客运合作伙伴 、 2022年北京冬奥会和冬残奥会官方 航空客运合作伙伴，具有国
+            内航空公司第一的品牌价值 (世界品牌实 验室 2019年6月评测为 1678.76 亿元 )， 在航空客运、货运及相关服务诸方面，均处于国内领先地位。
+            截至 2019 年6月30日，国航（含控股公司）共拥有以波音、空中客车为主的各型飞机676架，平均机龄6. 81年；经营客运航线已达766条，其中国际航线132条，地区航线29 条，国内航线605条，通航国家（地区）
+            41 个，通航城市190个，其中国际67个，地区3个，国内120个；通过与星空联盟成员等航空公司的合作，将服务进一步拓展到 193 个国家的 1317 个目的地。
+          </p>
+        </div>
+        <div class="col-md-4 col-xs-4 col-sm-5 sponsor_logo_ONPS wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s" style="padding-top: 50px;">
+          <img  src="img/sponsor/ONPS.png" alt="" onclick="addDescprition('ONPS','display_valuable','description_valuable')" />
+        </div>
+        <div id="ONPS" style="display: none;">
+          <p>
+            <h3>"ONPS国际暑期学校平台 "</h3>
+            ONPS国际暑期学校平台（简称ONPS）由一批毕业于哈佛大学、布兰迪斯大学、英属哥伦比亚大学等怀有教育梦想的创业青年于2010年创立，是北京森培未来教育科技有限公司旗下先锋品牌。
+            ONPS以“帮助更多学生在全球化格局下定位自己探索未来”为愿景，秉承推进世界教育交流与合作的理念，整合全球优质教育资源，致力打造优质、实用教育产品，为新时代青年学者提供全球化高品质教育服务，
+            帮助不同种族、不同经济条件、不同信仰的学生塑造世界公民的价值观。
+          </p>
+        </div>
+      </div>
+      <div id="description_valuable" class="desription_wrap" style="display: none">
+        <div id="display_valuable" class="desription_quotes"></div>
+      </div>
 
 
+      <div class="row" style="padding-bottom: 10px;" >
+        <div class="col-lg-12">
+          <div class="section_title text-center mb-80">
+            <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+              Contributory Sponsors
+            </h4>
+          </div>
+        </div>
+      </div>
 
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+      <div class='container'>
+        <div class="row justify-content-center" style="padding-bottom: 80px;">
+          <div  class="col-md-4 col-sm-6 col-xs-6 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s" >
+            <img src="img/sponsor/giga.png" alt="" onclick="addDescprition('giga','display_contributory','description_contributory')"/>
+          <div id="giga" style="display: none;">
+            <h3>"Giga剧本杀 "</h3>
+            <p>
+              Giga剧本杀位于65 Wakefield Street 地下一层。Giga剧本杀不仅拥有海量新本和专业场地，另外Giga网吧拥有超过100台高配电脑和多个麻将包间及其他娱乐项目，是学习工作之余放松休闲社交的绝佳选择。
+            </p>
+          </div>
+    </div>
+      </div>
 
+      <div id="description_contributory" class="desription_wrap" style="display: none">
+        <div id="display_contributory" class="desription_quotes"></div>
+      </div>
+      
 
-    <script src="js/main.js"></script>
+    </div>
+  </div>
+  </div>
+  <!-- Sponsor_logo_end  -->
+
+  <!-- footer_start  -->
+  <footer class="footer">
+    <div class="footer_top" style="padding-bottom: 0px; margin-bottom: 0px;">
+      <div class="container">
+        <div class="row justify-content-center" >
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="footer_widget" style="padding-bottom: 0px;">
+                  <h3>About Us</h3>
+                  <p>The New Zealand Chinese Students’ Association (NZCSA) is a charitable student society. The aim of the Association is to serve Chinese students in New Zealand by way of promoting Chinese culture and to act as a bridge between the Chinese student community and the New Zealand mainstream community.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="footer_widget">
+                  <h3>Our Events</h3>
+                  <ul style="color: #fff;">
+                    <li><a href="#">Upcoming Events</a></li>
+                    <li><a href="#">Past Events</a></li>
+                    <li><a href="#">Photo Gallery</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                <div class="footer_widget">
+                  <h3>Join Us</h3>
+                  <ul class="float">
+                    <li><a href="#">Committee</a></li>
+                    <li><a href="joinus.html">Membership</a></li>
+                    <li><a href="joinus.html">Volunteer</a></li>
+                    <li><a href="group.html">WeChat Group</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy-right_text" style="padding-bottom: 0px;">
+      <div class="container" >
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <ul class="list-unstyled list-inline social text-center">
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+              </div>
+              <hr>
+            </div>	
+            <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s" style="padding-top: 0px;">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              2017
+              All rights reserved
+              <a href="#">NZCSA</a> | This template is made with
+              <i class="fa fa-heart-o" aria-hidden="true"></i> by
+              <a href="https://colorlib.com" target="_blank">Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer_end  -->
+
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/scrollIt.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/gijgo.min.js"></script>
+  <script src="js/nice-select.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/tilt.jquery.js"></script>
+  <script src="js/plugins.js"></script>
+
+  <!--contact js-->
+  <script src="js/contact.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/mail-script.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
