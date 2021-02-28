@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>EventCon</title>
+    <title>About Us</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,15 +52,94 @@
 
         .performar_area .single_performer .performer_heading h4 {
             color: black;
+            margin-bottom: 20px;
         }
 
         span {
             size: 25px;
             text-decoration: solid;
         }
-        
 
+        .performar_area .single_performer .performer_heading span {
+            color: #FF4533;
+            font-weight: 400;
+            font-size: 15px;
+            font-family: unset;
+        }
 
+        .performar_area .single_performer .performer_heading .title {
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        #infoCard {
+            margin-top: 20px;
+        }
+
+        .footer .footer_top {
+            padding-top: 6%;
+            padding-bottom: 6%;
+        }
+
+        .footer .footer_widget p {
+            font-size: smaller;
+        }
+/* 
+        a {
+            color: #AAB1B7;
+        } */
+
+        a:hover {
+            color: white;
+        }
+
+        .bradcam_bg_1 {
+            background-image: url(img/career/group/group-main-bg.jpg);
+        }
+
+        /* The overlay effect (full height and width) - lays on top of the container and over the image */
+        .overlay3 {
+            /* position: absolute; */
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-color: black;
+        }
+
+        /* When you mouse over the container, fade in the overlay icon*/
+        .thumb:hover .overlay3 {
+            opacity: 0.8;
+        }
+
+        /* The icon inside the overlay is positioned in the middle vertically and horizontally */
+        .icon {
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* When you move the mouse over the icon, change color */
+        .fa-user:hover {
+            color: #eee;
+        }
+
+        .thumb {
+            padding: 10px;
+        }
+        .performar_area .single_performer .thumb img {
+            border-radius: 20%;
+            padding: 5%;
+        }
     </style>
 </head>
 
@@ -166,13 +245,19 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/Summer_HR1.jpg" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:summer.xia@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Summer Xia</h4>
-                                    <span>President</span>
+                                    <span style="font-size: x-large;">President</span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-4 col-md-4">
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                                 <!-- <div data-tilt class="thumb">
@@ -188,10 +273,16 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/jennySha.jpg" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:jenny.sha@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Jenny Sha</h4>
-                                    <span>Treasurer</span>
+                                    <span class="title">Treasurer</span><br>
+                                    <span>Department of Finance</span>
                                 </div>
                             </div>
                         </div>
@@ -199,21 +290,35 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/HR_Annan.jpg" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:annan.chen@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Annan Chen</h4>
-                                    <span>Director of Human Resources</span>
+                                    <span class="title">Director</span><br>
+                                    <span>Department of Human Resources</span>
+
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/estellaLiu.jpeg" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:estella.liu@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Estella Liu</h4>
-                                    <span>Associate Director of Human Resources</span>
+                                    <span class="title">Associate Director</span><br>
+                                    <span>Department of Human Resources</span>
                                 </div>
                             </div>
                         </div>
@@ -221,10 +326,16 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/meloGuan.png" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:melo.guan@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Melo Guan</h4>
-                                    <span>Director of Information Technology</span>
+                                    <span class="title">Director</span><br>
+                                    <span>Department of Information Technology</span>
                                 </div>
                             </div>
                         </div>
@@ -232,10 +343,16 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/YahuiCai.jpeg" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:yahui.cai@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>YaHui Cai</h4>
-                                    <span>Director of Business Development</span>
+                                    <span class="title">Director</span><br>
+                                    <span>Department of Business Development</span>
                                 </div>
                             </div>
                         </div>
@@ -243,10 +360,16 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/dorisQin.jpeg" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:doris.qin@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Doris Qin</h4>
-                                    <span>Associate Director of Business Development</span>
+                                    <span class="title">Associate Director</span><br>
+                                    <span>Department of Business Development</span>
                                 </div>
                             </div>
                         </div>
@@ -254,21 +377,34 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/josephine.jpeg" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:josephine.wang@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Josephine Wang</h4>
-                                    <span>Director of Operations</span>
+                                    <span class="title">Director<br></span>
+                                    <span>Department of Operations</span>
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/blank-profile-picture-973460_640.png" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:ferry.feng@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Ferry Feng</h4>
-                                    <span>Associate Director of Operations</span>
+                                    <span class="title">Associate Director</span><br>
+                                    <span>Department of Operations</span>
                                 </div>
                             </div>
                         </div>
@@ -276,10 +412,16 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/blank-profile-picture-973460_640.png" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:katherine.zhou@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Katherine Zhou</h4>
-                                    <span>Co-Director of Marketing</span>
+                                    <span class="title">Co-Director</span><br>
+                                    <span>Department of Marketing</span>
                                 </div>
                             </div>
                         </div>
@@ -287,10 +429,16 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/brandiRuan.jpg" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:brandi.ruan@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>Brandi Ruan</h4>
-                                    <span>Co-Director of Marketing</span>
+                                    <span class="title">Co-Director</span><br>
+                                    <span>Department of Marketing</span>
                                 </div>
                             </div>
                         </div>
@@ -298,13 +446,21 @@
                             <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                 <div data-tilt class="thumb">
                                     <img src="img/2021team/jamesGeng.jpg" alt="">
+                                    <div class="overlay3">
+                                        <a href="mailto:james.geng@nzcsa.com" class="icon" title="User Profile">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="performer_heading">
                                     <h4>James Geng</h4>
-                                    <span>Secretary-General</span>
+                                    <span class="title">Secretary-General</span><br>
+                                    <span>Department of Secretary</span>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -313,142 +469,73 @@
     <!-- performar_area_end  -->
 
 
-    <!-- map_area_start  -->
-    <div class="map_area">
-        <div id="map" style="height: 600px; position: relative; overflow: hidden;">
-
-        </div>
-        <script>
-            function initMap() {
-                var uluru = {
-                    lat: -25.363,
-                    lng: 131.044
-                };
-                var grayStyles = [{
-                    featureType: "all",
-                    stylers: [{
-                        saturation: -90
-                    },
-                    {
-                        lightness: 50
-                    }
-                    ]
-                },
-                {
-                    elementType: 'labels.text.fill',
-                    stylers: [{
-                        color: '#ccdee9'
-                    }]
-                }
-                ];
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: -31.197,
-                        lng: 150.744
-                    },
-                    zoom: 9,
-                    styles: grayStyles,
-                    scrollwheel: false
-                });
-            }
-        </script>
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
-            </script>
-        <div class="location_information black_bg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-            <h3>Concert 2020</h3>
-            <div class="info_wrap">
-                <div class="single_info">
-                    <span>Vanue:</span>
-                    <p>26/A, Coontum Avenu
-                        New York-2783</p>
-                </div>
-                <div class="single_info">
-                    <span>Phone:</span>
-                    <p>+10 (88) 267 368 283</p>
-                </div>
-                <div class="single_info">
-                    <span>Email:</span>
-                    <p>contact@concert20.com</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- map_area_end  -->
-
-    <!-- brand_area_start  -->
-    <div class="brand_area black_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text-center mb-80">
-                        <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Sponsor Logos</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="brand_wrap">
-                        <div class="brand_active owl-carousel">
-                            <div class="single_brand text-center">
-                                <img src="img/brand/1.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/2.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/3.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/4.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/5.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/1.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- brand_area_end  -->
     <!-- footer_start  -->
     <footer class="footer">
         <div class="footer_top">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-8">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="footer_widget" style="padding-bottom: 0px;">
+                            <h3>About Us</h3>
+                            <p>The New Zealand Chinese Students’ Association (NZCSA) is a charitable student society.
+                                The aim of the Association is to serve Chinese students in New Zealand by way of
+                                promoting Chinese culture and to act as a bridge between the Chinese student community
+                                and the New Zealand mainstream community.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <div class="footer_widget">
-                            <div class="address_details text-center">
-                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">12 Feb, 2020</h4>
-                                <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Green Avenue, New
-                                    York</h3>
-                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">The event regularly
-                                    attracts a diverse range of attendees from around the world.</p>
-                                <a href="#" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".6s">Buy Tickets</a>
-                            </div>
+                            <h3>Our Events</h3>
+                            <ul style="color: #fff;">
+                                <li><a href="#">Upcoming Events</a></li>
+                                <li><a href="#">Past Events</a></li>
+                                <li><a href="#">Photo Gallery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                        <div class="footer_widget">
+                            <h3>Join Us</h3>
+                            <ul class="float">
+                                <li><a href="#">Committee</a></li>
+                                <li><a href="joinus.html">Membership</a></li>
+                                <li><a href="joinus.html">Volunteer</a></li>
+                                <li><a href="group.html">WeChat Group</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copy-right_text">
+        <div class="copy-right_text" style="padding-bottom: 0px;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <ul class="list-unstyled list-inline social text-center">
+                                    <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                                                class="fa fa-google-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"
+                                            target="_blank"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <hr>
+                        </div>
+                        <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"
+                            style="padding-top: 0px;">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            2021
+                            All rights reserved
+                            <a href="#">NZCSA</a> | This Website is implemented by
+                            <a href="#" target="_blank">NZCSA Information Technology Department</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
