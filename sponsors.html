@@ -82,27 +82,29 @@
 <!-- Shows display the intro of the sponsor -->
 <script type="text/javascript">
   function showNHideDescription(contentId,descriptionDiv,displayDivId) {
+    // To show the description in the row require; 
+    // Getting all the requrie div
+    var content = document.getElementById(contentId);
+    var displayDiv =document.getElementById(displayDivId);
+    var description = document.getElementById(descriptionDiv);
+    var currentDisplayDivId= description.name;
+    var currentDisplayStyle=description.style.display;
+
     // To hide all the descriptions
     document.getElementById("description_container_row_1").style.display="none";
     document.getElementById("description_container_row_2").style.display="none";
     document.getElementById("description_container_row_3").style.display="none";
     document.getElementById("description_contri_container_1").style.display="none";
 
-    // To show the description in the row require; 
-    // Getting all the requrie div
-    var content = document.getElementById(contentId);
-    var displayDiv =document.getElementById(displayDivId);
-    var description = document.getElementById(descriptionDiv);
-    var currentDisplayDivId= displayDiv.name;
-    var currentDisplayStyle=description.style.display;
-
     // Toggle ability by check if the current showing content is the same as require. 
     // And switch to a different content when a different logo is clicked
     if(currentDisplayDivId===contentId && currentDisplayStyle !="none" ){
+      console.log("ues");
       description.style.display="none";
     }else{
+      console.log("fs");
       description.style.display = "block";
-      displayDiv.name=contentId;
+      description.name=contentId;
       displayDiv.innerHTML = content.innerHTML;
     }
   }
