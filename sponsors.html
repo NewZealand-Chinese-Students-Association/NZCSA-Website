@@ -29,24 +29,30 @@
 </head>
 
 <style>
-  .sponsor_logo img {
+  .sponsor_logo_left img {
     width: 100%;
     height: auto;
+    -ms-transition: 0.4s ease-in-out;
+   -webkit-transition: 0.4s ease-in-out;
+   transition: 0.4s ease-in-out;
   }
-  .sponsor_logo img:hover{
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    perspective: 1000px;
+  .sponsor_logo_left img:hover{
+    -ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+    transform: rotate(-15deg);
   }
 
-  .sponsor_logo_Air img {
+  .sponsor_logo_right img {
     width: 100%;
     height: auto;
+    -ms-transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
-  .sponsor_logo_Air img:hover{
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    perspective: 1000px;
+  .sponsor_logo_right img:hover{
+    -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
   }
 
 
@@ -84,19 +90,6 @@
     color: red;
   }
 
-  @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
 </style>
 
 <!-- Shows display the intro of the sponsor -->
@@ -228,7 +221,7 @@
 
       <div class="row justify-content-around" style="padding-bottom: 80px;">
 
-        <div class="col-md-4 col-6 col-sm-6 sponsor_logo wow fadeInDown " ata-wow-duration="1s" data-wow-delay=".3s">
+        <div class="col-md-4 col-6 col-sm-6 sponsor_logo_left wow fadeInDown " ata-wow-duration="1s" data-wow-delay=".3s">
           <img src="img/sponsor/zhangshangNZ1.png" class="img-fluid" alt=""
             onclick="showNHideDescription('zhangshangNZ','description_container_row_1','description_display_row_1')" />
         </div>
@@ -246,7 +239,7 @@
           </p>
         </div>
 
-        <div class="col-md-3 col-5 col-sm-6 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+        <div class="col-md-3 col-5 col-sm-6 sponsor_logo_right wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
           <img src="img/sponsor/inDepth.jpg" alt=""
             onclick="showNHideDescription('InDepth','description_container_row_1','description_display_row_1')" />
         </div>
@@ -259,7 +252,7 @@
       </div>
 
       <div class="row justify-content-around" >
-        <div class="col-md-4 col-6 col-sm-5 sponsor_logo wow fadeInDown" ata-wow-duration="1s"
+        <div class="col-md-4 col-6 col-sm-5 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s"
           data-wow-delay=".3s">
           <img src="img/sponsor/cpa.jpg" alt=""
             onclick="showNHideDescription('cpa','description_container_row_2','description_display_row_2')"
@@ -274,7 +267,7 @@
           </p>
         </div>
 
-        <div class="col-md-5 col-6 col-sm-6  sponsor_logo_Air wow fadeInDown" ata-wow-duration="1s"
+        <div class="col-md-5 col-6 col-sm-6  sponsor_logo_right wow fadeInDown" ata-wow-duration="1s"
           data-wow-delay=".3s">
           <img src="img/sponsor/airchina.png" alt=""
             onclick="showNHideDescription('airchina','description_container_row_2','description_display_row_2')" />
@@ -296,7 +289,7 @@
       </div>
 
       <div class="row justify-content-center" style="padding-bottom: 80px;">
-        <div class="col-md-4 col-6 col-sm-6 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s"
+        <div class="col-md-4 col-6 col-sm-6 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s"
           style="padding-top: 50px;">
           <img src="img/sponsor/skyTower.jpg" alt=""
             onclick="showNHideDescription('skyTower','description_container_row_3','description_display_row_3')" />
@@ -335,7 +328,7 @@
       <div class='container'>
         <div class="row justify-content-center align-items-end" style="padding-bottom: 10px;">
 
-          <div class="col-md-3 col-5 col-sm-4 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+          <div class="col-md-3 col-5 col-sm-4 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
             <img src="img/sponsor/giga.jpg" alt=""
               onclick="showNHideDescription('giga','description_contri_container_1','display_contri_container_1')" />
             <div id="giga" style="display: none;">
@@ -346,7 +339,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-3 col-5 col-sm-4 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+          <div class="col-md-3 col-5 col-sm-4 sponsor_logo_right wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
             <img src="img/sponsor/empire.jpg" alt=""
               onclick="showNHideDescription('Empire','description_contri_container_1','display_contri_container_1')" />
           </div>
@@ -377,11 +370,11 @@
   <footer class="footer">
     <div class="footer_top" style="padding-bottom: 0px; margin-bottom: 0px;">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="row justify-content">
+          <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="footer_widget" style="padding-bottom: 0px;">
               <h3>About Us</h3>
-              <p>The New Zealand Chinese Students’ Association (NZCSA) is a charitable student society. The aim of the
+              <p style="line-height: 1.5;">The New Zealand Chinese Students’ Association (NZCSA) is a charitable student society. The aim of the
                 Association is to serve Chinese students in New Zealand by way of promoting Chinese culture and to act
                 as a bridge between the Chinese student community and the New Zealand mainstream community.</p>
             </div>
@@ -407,6 +400,13 @@
               </ul>
             </div>
           </div>
+          <div class="col-md-3  col-sm-12  col-12">
+          <div class="footer_widget">
+            <h3>Contact Us</h3>
+            <p style="margin-bottom: 0px; margin-top: 0px;"><b style="color: white;">Email</b>: info@nzcsa.com</p>
+            <img class="img-responsive" src="img/NZCSAqrcode.dib" alt="">
+          </div>
+          </div>
         </div>
       </div>
     </div>
@@ -417,16 +417,14 @@
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12">
                 <ul class="list-unstyled list-inline social text-center">
-                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                  <li class="list-inline-item"><a href="https://www.facebook.com/nzcsa/"><i
                         class="fa fa-facebook"></i></a></li>
-                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
-                        class="fa fa-twitter"></i></a></li>
-                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
+                  <li class="list-inline-item"><a href="https://www.instagram.com/nzcsa/"><i
                         class="fa fa-instagram"></i></a></li>
-                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i
-                        class="fa fa-google-plus"></i></a></li>
-                  <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i
-                        class="fa fa-envelope"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.linkedin.com/company/new-zealand-chinese-student-association" target="_blank"><i
+                        class="fa fa-linkedin"></i></a></li>
+                  <li class="list-inline-item"><a href="group.html"><i
+                        class="fa fa-wechat"></i></a></li>
                 </ul>
               </div>
               <hr>
