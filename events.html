@@ -30,7 +30,6 @@
     <style>
         .program_details_area.detials_bg_1.overlay2 div div div {
             -webkit-box-flex: 0;
-            /* -ms-flex: 0 0 66.666667%; */
             max-width: 100%;
             flex: 0 0 100%;
         }
@@ -38,15 +37,34 @@
         .program_details_area.detials_bg_1.overlay2 {
             position: inherit;
             content: "";
-            /* background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.8) 100%); */
-            /* background: -webkit-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.8) 100%); */
-            /* background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.8) 100%); */
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#cc000000', GradientType=0);
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
+
+        }
+
+        .program_details_area .program_detail_wrap::before {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            content: '';
+            background: black;
+            height: 90%;
+            width: 1px;
+            top: 0;
+            bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+
+            .program_details_area .program_detail_wrap::before {
+                left: 13px;
+                transform: translateX(0);
+                height: 93%;
+            }
         }
 
         .program_details_area {
@@ -185,21 +203,23 @@
                                 <div class="thumb wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                                     <img src="img/events/_MG_1283.JPG" alt="">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="single_propram">
                             <div class="inner_wrap">
                                 <div class="circle_img"></div>
                                 <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Indepth 公开课</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">15 - 21 March
+                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Indepth
+                                        公开课</span>
+                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">15 - 21
+                                        March
                                     </h4>
                                 </div>
                                 <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <img src="img/events/DSC01103.JPG" alt="">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="single_propram">
@@ -214,7 +234,7 @@
                                 <div class="thumb  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                                     <img src="img/career/2017DW1.jpg" alt="">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="single_propram">
@@ -223,13 +243,14 @@
                                 <div class="porgram_top">
                                     <span class="wow fadeInRight" data-wow-duration="1s"
                                         data-wow-delay=".3s">专业交流分享</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">26 April- 2 May
+                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">26 April- 2
+                                        May
                                     </h4>
                                 </div>
                                 <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <img src="img/events/Copy of -1868596559.jpg" alt="">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="single_propram">
@@ -244,7 +265,7 @@
                                 <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <img src="img/events/IMG_6021.jpg" alt="">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="single_propram">
@@ -259,7 +280,7 @@
                                 <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <img src="img/events/IMG_8472-2.jpg" alt="">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="single_propram">
@@ -274,7 +295,7 @@
                                 <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <img src="img/events/DSC01343.JPG" alt="">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="single_propram">
@@ -289,22 +310,22 @@
                                 <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <img src="img/events/DSC04113.JPG" alt="">
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="single_propram">
                             <div class="inner_wrap">
                                 <div class="circle_img"></div>
                                 <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s"
-                                        data-wow-delay=".3s">Cocktail Party</span>
+                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Cocktail
+                                        Party</span>
                                     <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">11 - 17 Oct
                                     </h4>
                                 </div>
                                 <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <img src="img/events/DSCF3171.JPG" alt="">
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
