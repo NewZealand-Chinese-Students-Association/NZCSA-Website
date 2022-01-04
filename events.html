@@ -1,344 +1,475 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Events</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/gijgo.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/slicknav.css" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 
     <style>
-        .program_details_area.detials_bg_1.overlay2 div div div {
-            -webkit-box-flex: 0;
-            max-width: 100%;
-            flex: 0 0 100%;
-        }
+      .program_details_area.detials_bg_1.overlay2 div div div {
+        -webkit-box-flex: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
 
-        .program_details_area.detials_bg_1.overlay2 {
-            position: inherit;
-            content: "";
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#cc000000', GradientType=0);
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+      .program_details_area.detials_bg_1.overlay2 {
+        position: inherit;
+        content: "";
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#cc000000', GradientType=0);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
 
-        }
+      .program_details_area .program_detail_wrap::before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        background: black;
+        height: 90%;
+        width: 1px;
+        top: 0;
+        bottom: 0;
+      }
 
+      @media (max-width: 767px) {
         .program_details_area .program_detail_wrap::before {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            content: '';
-            background: black;
-            height: 90%;
-            width: 1px;
-            top: 0;
-            bottom: 0;
+          left: 13px;
+          transform: translateX(0);
+          height: 93%;
         }
+      }
 
-        @media (max-width: 767px) {
+      .program_details_area {
+        background-size: cover;
+        background-position: center bottom;
+        padding: 150px 0px;
+        background: white;
+      }
 
-            .program_details_area .program_detail_wrap::before {
-                left: 13px;
-                transform: translateX(0);
-                height: 93%;
-            }
-        }
+      .program_details_area
+        .program_detail_wrap
+        .single_propram
+        .porgram_top
+        h4 {
+        font-size: 20px;
+        font-weight: 400;
+        color: unset;
+      }
 
-        .program_details_area {
-            background-size: cover;
-            background-position: center bottom;
-            padding: 150px 0px;
-            background: white;
-        }
+      a {
+        color: #aab1b7;
+      }
 
-        .program_details_area .program_detail_wrap .single_propram .porgram_top h4 {
-            font-size: 20px;
-            font-weight: 400;
-            color: unset;
-        }
+      a:hover {
+        color: red;
+      }
 
+      .footer .footer_top {
+        padding-top: 6%;
+        padding-bottom: 6%;
+      }
 
-        a {
-            color: #AAB1B7;
-        }
+      .footer .footer_widget p {
+        font-size: smaller;
+      }
 
-        a:hover {
-            color: red;
-        }
-
-        .footer .footer_top {
-            padding-top: 6%;
-            padding-bottom: 6%;
-        }
-
-        .footer .footer_widget p {
-            font-size: smaller;
-        }
-
-        .header-area .main-header-area .main-menu ul li {
-            display: inline-block;
-            position: relative;
-            margin: 0 19px;
-        }
+      .header-area .main-header-area .main-menu ul li {
+        display: inline-block;
+        position: relative;
+        margin: 0 19px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
     <!-- header-start -->
     <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container">
-                    <div class="header_bottom_border">
-                        <div class="row align-items-center">
-                            <div class="col-xl-3 col-lg-3">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="img/logo.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="index.html">home</a></li>
-                                            <li><a href="aboutus.html">About Us</a></li>
-                                            <li><a href="sponsors.html">sponsors</a></li>
-                                            <li><a href="career.html">career</a></li>
-                                            <li><a href="events.html">events </a></li>
-
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                <div class="buy_tkt">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a
-                                            href="https://docs.google.com/forms/d/e/1FAIpQLSdMPe0FfRsWNF2iE6Sr6YJoTE4wxZ-UpWzRjtj2CQJUaC-FZA/viewform?usp=sf_link">Join
-                                            Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-
+      <div class="header-area">
+        <div id="sticky-header" class="main-header-area">
+          <div class="container">
+            <div class="header_bottom_border">
+              <div class="row align-items-center">
+                <div class="col-xl-3 col-lg-3">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img src="img/logo.png" alt="" />
+                    </a>
+                  </div>
                 </div>
+                <div class="col-xl-6 col-lg-6">
+                  <div class="main-menu d-none d-lg-block">
+                    <nav>
+                      <ul id="navigation">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="sponsors.html">sponsors</a></li>
+                        <li><a href="career.html">career</a></li>
+                        <li><a href="events.html">events </a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                  <div class="buy_tkt">
+                    <div class="book_btn d-none d-lg-block">
+                      <a href="https://nzcsa.wdcc.co.nz">Join Us</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </header>
     <!-- header-end -->
 
     <!-- bradcam_area -->
     <div class="bradcam_area">
-        <div class="single_bradcam  d-flex align-items-center bradcam_bg_3 overlay">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-xl-12">
-                        <div class="bradcam_text text-center">
-                            <div class="shape_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <img src="img/shape/shape_1.svg" alt="">
-                            </div>
-                            <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
-                                <img src="img/shape/shape_2.svg" alt="">
-                            </div>
-                            <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Events</h3>
-                        </div>
-                    </div>
+      <div
+        class="single_bradcam d-flex align-items-center bradcam_bg_3 overlay"
+      >
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-xl-12">
+              <div class="bradcam_text text-center">
+                <div
+                  class="shape_1 wow fadeInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay=".2s"
+                >
+                  <img src="img/shape/shape_1.svg" alt="" />
                 </div>
+                <div
+                  class="shape_2 wow fadeInDown"
+                  data-wow-duration="1s"
+                  data-wow-delay=".3s"
+                >
+                  <img src="img/shape/shape_2.svg" alt="" />
+                </div>
+                <h3
+                  class="wow fadeInRight"
+                  data-wow-duration="1s"
+                  data-wow-delay=".3s"
+                >
+                  Events
+                </h3>
+              </div>
             </div>
+          </div>
         </div>
-        <div style=" background-image:linear-gradient(180deg,rgba(0,0,0,1) 15%, rgba(62,61,61,1) 39%, rgba(255,255,255,1) 90%); height: 350px; padding-top: 0px;"
-            \></div>
+      </div>
+      <div
+        style="
+          background-image: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 1) 15%,
+            rgba(62, 61, 61, 1) 39%,
+            rgba(255, 255, 255, 1) 90%
+          );
+          height: 350px;
+          padding-top: 0px;
+        "
+        \
+      ></div>
     </div>
     <!-- bradcam_area end -->
 
     <div class="program_details_area detials_bg_1 overlay2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text-center mb-80  wow fadeInRight" data-wow-duration="1s"
-                        data-wow-delay=".3s">
-                        <h3 style="color: black;">2021 Event Timeline</h3>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div
+              class="section_title text-center mb-80 wow fadeInRight"
+              data-wow-duration="1s"
+              data-wow-delay=".3s"
+            >
+              <h3 style="color: black">2021 Event Timeline</h3>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="program_detail_wrap">
-                        
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Welcome
-                                        Party</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">13 - 14 March
-                                    </h4>
-                                </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/events/wp.JPG" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Indepth
-                                        公开课</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">15 - 21
-                                        March
-                                    </h4>
-                                </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/events/DSC01103.JPG" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <span class=" wow fadeInLeft" data-wow-duration="1s"
-                                        data-wow-delay=".3s">唱歌/配音比赛</span>
-                                    <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">03 - 18 April
-                                    </h4>
-                                </div>
-                                <div class="thumb  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/career/2017DW1.jpg" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s"
-                                        data-wow-delay=".3s">专业交流分享</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">26 April- 2
-                                        May
-                                    </h4>
-                                </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/events/Copy of -1868596559.jpg" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s"
-                                        data-wow-delay=".3s">剧本杀/密室逃脱</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">3 - 9 May
-                                    </h4>
-                                </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/events/IMG_6021.jpg" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s"
-                                        data-wow-delay=".3s">七夕插花</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">09 - 15 Aug
-                                    </h4>
-                                </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/events/IMG_8472-2.jpg" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <a style="text-decoration: underline;" href="pn.html"><span class="wow fadeInRight" data-wow-duration="1s"
-                                        data-wow-delay=".3s">Professional Networking</span></a>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">16 - 22 Aug
-                                    </h4>
-                                </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/events/DSC01343.JPG" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s"
-                                        data-wow-delay=".3s">滑冰/滑雪</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">30 - 12 Sep
-                                    </h4>
-                                </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/events/DSC04113.JPG" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Cocktail
-                                        Party</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">11 - 17 Oct
-                                    </h4>
-                                </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/events/DSCF3171.JPG" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="program_detail_wrap">
+              <div class="single_propram">
+                <div class="inner_wrap">
+                  <div class="circle_img"></div>
+                  <div class="porgram_top">
+                    <span
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".3s"
+                      >Welcome Party</span
+                    >
+                    <h4
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".4s"
+                    >
+                      13 - 14 March
+                    </h4>
+                  </div>
+                  <div
+                    class="thumb wow fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    <img src="img/events/wp.JPG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="single_propram">
+                <div class="inner_wrap">
+                  <div class="circle_img"></div>
+                  <div class="porgram_top">
+                    <span
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".3s"
+                      >Indepth 公开课</span
+                    >
+                    <h4
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".4s"
+                    >
+                      15 - 21 March
+                    </h4>
+                  </div>
+                  <div
+                    class="thumb wow fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    <img src="img/events/DSC01103.JPG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="single_propram">
+                <div class="inner_wrap">
+                  <div class="circle_img"></div>
+                  <div class="porgram_top">
+                    <span
+                      class="wow fadeInLeft"
+                      data-wow-duration="1s"
+                      data-wow-delay=".3s"
+                      >唱歌/配音比赛</span
+                    >
+                    <h4
+                      class="wow fadeInUp"
+                      data-wow-duration="1s"
+                      data-wow-delay=".4s"
+                    >
+                      03 - 18 April
+                    </h4>
+                  </div>
+                  <div
+                    class="thumb wow fadeInUp"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    <img src="img/career/2017DW1.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="single_propram">
+                <div class="inner_wrap">
+                  <div class="circle_img"></div>
+                  <div class="porgram_top">
+                    <span
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".3s"
+                      >专业交流分享</span
+                    >
+                    <h4
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".4s"
+                    >
+                      26 April- 2 May
+                    </h4>
+                  </div>
+                  <div
+                    class="thumb wow fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    <img src="img/events/Copy of -1868596559.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="single_propram">
+                <div class="inner_wrap">
+                  <div class="circle_img"></div>
+                  <div class="porgram_top">
+                    <span
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".3s"
+                      >剧本杀/密室逃脱</span
+                    >
+                    <h4
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".4s"
+                    >
+                      3 - 9 May
+                    </h4>
+                  </div>
+                  <div
+                    class="thumb wow fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    <img src="img/events/IMG_6021.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="single_propram">
+                <div class="inner_wrap">
+                  <div class="circle_img"></div>
+                  <div class="porgram_top">
+                    <span
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".3s"
+                      >七夕插花</span
+                    >
+                    <h4
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".4s"
+                    >
+                      09 - 15 Aug
+                    </h4>
+                  </div>
+                  <div
+                    class="thumb wow fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    <img src="img/events/IMG_8472-2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="single_propram">
+                <div class="inner_wrap">
+                  <div class="circle_img"></div>
+                  <div class="porgram_top">
+                    <a style="text-decoration: underline;" href="pn.html"><span class="wow fadeInRight" data-wow-duration="1s"
+                      data-wow-delay=".3s">Professional Networking</span></a>
+                    <h4
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".4s"
+                    >
+                      16 - 22 Aug
+                    </h4>
+                  </div>
+                  <div
+                    class="thumb wow fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    <img src="img/events/DSC01343.JPG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="single_propram">
+                <div class="inner_wrap">
+                  <div class="circle_img"></div>
+                  <div class="porgram_top">
+                    <span
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".3s"
+                      >滑冰/滑雪</span
+                    >
+                    <h4
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".4s"
+                    >
+                      30 - 12 Sep
+                    </h4>
+                  </div>
+                  <div
+                    class="thumb wow fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    <img src="img/events/DSC04113.JPG" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="single_propram">
+                <div class="inner_wrap">
+                  <div class="circle_img"></div>
+                  <div class="porgram_top">
+                    <span
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".3s"
+                      >Cocktail Party</span
+                    >
+                    <h4
+                      class="wow fadeInRight"
+                      data-wow-duration="1s"
+                      data-wow-delay=".4s"
+                    >
+                      11 - 17 Oct
+                    </h4>
+                  </div>
+                  <div
+                    class="thumb wow fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay=".5s"
+                  >
+                    <img src="img/events/DSCF3171.JPG" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- performar_area_start  -->
@@ -407,90 +538,107 @@
 
     <!-- footer_start  -->
     <footer class="footer">
-        <div class="footer_top" style="padding-bottom: 0px; margin-bottom: 0px;">
-            <div class="container">
-                <div class="row justify-content">
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="footer_widget" style="padding-bottom: 0px;">
-                            <h3>About Us</h3>
-                            <p style="line-height: 1.5;">The New Zealand Chinese Students’ Association (NZCSA) is a
-                                charitable student society. The aim of the
-                                Association is to serve Chinese students in New Zealand by way of promoting Chinese
-                                culture and to act
-                                as a bridge between the Chinese student community and the New Zealand mainstream
-                                community.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-3 col-md-3 mb-4 mb-md-0">
-                        <div class="footer_widget">
-                            <h3>Our Events</h3>
-                            <ul style="color: #fff;">
-                                <li><a href="#">Upcoming Events</a></li>
-                                <li><a href="#">Past Events</a></li>
-                                <li><a href="#">Photo Gallery</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-3 col-md-3 mb-4 mb-md-0 ">
-                        <div class="footer_widget">
-                            <h3>Join Us</h3>
-                            <ul class="float">
-                                <li><a href="#">Committee</a></li>
-                                <li><a
-                                        href="https://docs.google.com/forms/d/e/1FAIpQLSdMPe0FfRsWNF2iE6Sr6YJoTE4wxZ-UpWzRjtj2CQJUaC-FZA/viewform?usp=sf_link">Membership</a>
-                                </li>
-                                <li><a href="joinus.html">Volunteer</a></li>
-                                <li><a href="http://www.nzcsa.com/group.html">WeChat Group</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3  col-sm-12  col-12">
-                        <div class="footer_widget">
-                            <h3>Contact Us</h3>
-                            <p style="margin-bottom: 0px; margin-top: 0px;"><b style="color: white;">Email</b>:
-                                info@nzcsa.com</p>
-                            <img class="img-responsive" src="img/NZCSAqrcode.dib" alt="">
-                        </div>
-                    </div>
-                </div>
+      <div class="footer_top" style="padding-bottom: 0px; margin-bottom: 0px">
+        <div class="container">
+          <div class="row justify-content">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer_widget" style="padding-bottom: 0px">
+                <h3>About Us</h3>
+                <p style="line-height: 1.5">
+                  The New Zealand Chinese Students’ Association (NZCSA) is a
+                  charitable student society. The aim of the Association is to
+                  serve Chinese students in New Zealand by way of promoting
+                  Chinese culture and to act as a bridge between the Chinese
+                  student community and the New Zealand mainstream community.
+                </p>
+              </div>
             </div>
-        </div>
-        <div class="copy-right_text" style="padding-bottom: 0px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                                <ul class="list-unstyled list-inline social text-center">
-                                    <li class="list-inline-item"><a href="https://www.facebook.com/nzcsa/"><i
-                                                class="fa fa-facebook"></i></a></li>
-                                    <li class="list-inline-item"><a href="https://www.instagram.com/nzcsa/"><i
-                                                class="fa fa-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="https://nz.linkedin.com/company/nzcsa"
-                                            target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                    <li class="list-inline-item"><a href="http://www.nzcsa.com/group.html"><i
-                                                class="fa fa-wechat"></i></a></li>
-                                </ul>
-                            </div>
-                            <hr>
-                        </div>
-                        <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"
-                            style="padding-top: 0px;">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            2021
-                            All rights reserved
-                            <a href="#">NZCSA</a> | Website powered by
-                            <a href="#" target="_blank">NZCSA IT Department</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
+            <div class="col-lg-3 col-sm-3 col-md-3 mb-4 mb-md-0">
+              <div class="footer_widget">
+                <h3>Our Events</h3>
+                <ul style="color: #fff">
+                  <li><a href="#">Upcoming Events</a></li>
+                  <li><a href="#">Past Events</a></li>
+                  <li><a href="#">Photo Gallery</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="col-lg-3 col-sm-3 col-md-3 mb-4 mb-md-0">
+              <div class="footer_widget">
+                <h3>Join Us</h3>
+                <ul class="float">
+                  <li><a href="#">Committee</a></li>
+                  <li><a href="https://nzcsa.wdcc.co.nz">Membership</a></li>
+                  <li><a href="joinus.html">Volunteer</a></li>
+                  <li>
+                    <a href="http://www.nzcsa.com/group.html">WeChat Group</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-12">
+              <div class="footer_widget">
+                <h3>Contact Us</h3>
+                <p style="margin-bottom: 0px; margin-top: 0px">
+                  <b style="color: white">Email</b>: info@nzcsa.com
+                </p>
+                <img class="img-responsive" src="img/NZCSAqrcode.dib" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="copy-right_text" style="padding-bottom: 0px">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item">
+                      <a href="https://www.facebook.com/nzcsa/"
+                        ><i class="fa fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.instagram.com/nzcsa/"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://nz.linkedin.com/company/nzcsa"
+                        target="_blank"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="http://www.nzcsa.com/group.html"
+                        ><i class="fa fa-wechat"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <hr />
+              </div>
+              <p
+                class="copy_right text-center wow fadeInDown"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+                style="padding-top: 0px"
+              >
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy; 2021 All rights reserved
+                <a href="#">NZCSA</a> | Website powered by
+                <a href="#" target="_blank">NZCSA IT Department</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- footer_end  -->
-
 
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -513,8 +661,6 @@
     <script src="js/tilt.jquery.js"></script>
     <script src="js/plugins.js"></script>
 
-
-
     <!--contact js-->
     <script src="js/contact.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
@@ -522,8 +668,6 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
 
-
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
