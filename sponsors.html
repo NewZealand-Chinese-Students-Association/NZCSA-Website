@@ -112,6 +112,12 @@
     margin: 0 19px;
   }
 
+  .modal-backdrop {
+    z-index: 1;
+    height: 100%;
+  }
+
+
   @media (max-width: 767px) {
     .section_title h3 {
       font-size: 50px;
@@ -151,6 +157,7 @@
       displayDiv.innerHTML = content.innerHTML;
     }
   }
+
 </script>
 
 <body>
@@ -163,6 +170,7 @@
     <![endif]-->
 
   <!-- header-start -->
+
   <header>
     <div class="header-area">
       <div id="sticky-header" class="main-header-area">
@@ -185,10 +193,9 @@
                       <li><a href="sponsors.html">sponsors</a></li>
                       <li><a href="career.html">career</a></li>
                       <li>
-                        <a href="events.html"
-                          >events
+                        <a href="events.html">events
                           <i class="ti-angle-down">
-                            </i>
+                          </i>
                         </a>
                         <ul class="submenu">
                           <li>
@@ -378,52 +385,43 @@
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s"
               data-wow-delay=".3s" style="padding-top: 50px">
-              <img src="img/sponsor/nze.png" alt="" />
+              <img src="img/sponsor/ENZ.jpg" alt="" type="button" data-toggle="modal" data-target="#exampleModal" />
             </div>
-          </div>
 
-          <div class=container>
-            <div class="column justify-content-center align-items-end">
-
-              <!-- <div class="row justify-content-center align-items-end" style="padding-bottom: 50px">
-                  <div class="col-md-3 col-4 col-sm-5 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s"
-                    data-wow-delay=".3s">
-                    <img src="img/sponsor/SUCSA.jpg" alt="" />
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Wechat Mini Program</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/sponsor/enzqr.png" alt="" style="max-width: 100%;"/>
                   </div>
                 </div>
-
- -->
-
-              <!-- <div class="row justify-content-center align-items-center" style="padding-bottom: 50px">
-                  <div class="col-md-4 col-4 col-sm-5 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s"
-                    data-wow-delay=".3s">
-                    <img src="img/sponsor/WRSA.jpg" alt="" />
-                    <div id="wrsa" style="display: block; text-align: center">
-                      <br />
-                      <h4>江苏省欧美同学会 <br />（江苏省留学人员联谊会）</h4>
-                    </div>
-                  </div>
-                </div>
-
-
-
-                <div class="row justify-content-center align-items-end" style="padding-bottom: 50px">
-                  <div class="col-md-4 col-4 col-sm-5 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s"
-                    data-wow-delay=".3s">
-                    <img src="img/sponsor/nzcap.jpg" alt="" />
-                  </div> -->
-
+              </div>
             </div>
+
           </div>
+
         </div>
+
       </div>
     </div>
+
+
   </div>
   </div>
   </div>
   </div>
   </div>
   <!-- Sponsor_logo_end  -->
+
+
 
   <div style="
         background-image: linear-gradient(
@@ -524,9 +522,31 @@
         </div>
       </div>
     </div>
+
+
   </footer>
   <!-- footer_end  -->
-
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- JS here -->
   <script src="js/vendor/modernizr-3.5.0.min.js"></script>
   <script src="js/vendor/jquery-1.12.4.min.js"></script>
