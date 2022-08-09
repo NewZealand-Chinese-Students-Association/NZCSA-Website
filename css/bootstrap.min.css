@@ -1596,6 +1596,18 @@ pre code {
         flex: 0 0 25%;
         max-width: 25%
     }
+	.col-xl-22 {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 20.666667%;
+	    flex: 0 0 20.666667%;
+	    max-width: 20.666667%
+	}
+	.col-xl-23 {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 21%;
+	    flex: 0 0 21%;
+	    max-width: 21%
+	}
     .col-xl-4 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
