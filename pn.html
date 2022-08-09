@@ -44,6 +44,15 @@
         z-index: -1;
       }
 
+      .btn_expired{
+        color: gray;
+        border: gray 1px solid;
+      }
+      .btn_expired:hover{
+        background-color: gray;
+        color: white;
+      }
+
       .program_details_area .program_detail_wrap::before {
         position: absolute;
         left: 50%;
@@ -115,10 +124,6 @@
         padding-left: 6px;
         margin-bottom: 15px;
       }
-	  #navigation li{
-	  	
-	  	display : inline;
-	  }
       @keyframes float {
 	0% {
 		transform: translatey(0px);
@@ -130,11 +135,6 @@
 		transform: translatey(0px);
 	}
 }
-.downArrow{
-  animation:float 4s ease-in-out infinite; 
-  font-size: 3rem;
-}
-
     </style>
   </head>
 
@@ -154,14 +154,14 @@
           <div class="container">
             <div class="header_bottom_border">
               <div class="row align-items-center">
-                <div class="col-xl-3 col-lg-3">
+                <div class="col-xl-22 col-lg-3">
                   <div class="logo">
                     <a href="index.html">
                       <img src="img/logo.png" alt="" />
                     </a>
                   </div>
                 </div>
-                <div class="col-xl-6 col-lg-6">
+                <div class="col-xl-7 col-lg-7">
                   <div class="main-menu d-none d-lg-block">
                     <nav>
                       <ul id="navigation">
@@ -169,7 +169,7 @@
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="sponsors.html">sponsors</a></li>
                         <li><a href="career.html">career</a></li>
-						<li><a href="award.html">award</a></li>
+                        <li><a href="award.html">award</a></li>
                         <li>
                           <a href="events.html"
                             >events
@@ -185,11 +185,11 @@
                     </nav>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                <div class="col-xl-23 col-lg-2 d-none d-lg-block">
                   <div class="buy_tkt">
                     <div class="book_btn d-none d-lg-block">
                       <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdXyveCKTvH0uN7NBpECAhVPmaPE0G3cS0cG772StjGXHa3Rw/viewform"
+                        href="https://nzcsa.wdcc.co.nz"
                         >Join Us</a
                       >
                     </div>
@@ -223,7 +223,7 @@
                   2022<br />
                   Professional Networking
                 </h3>
-                <a href="#content"><i class="p-5 fa fa-arrow-down text-white downArrow"></i></a>
+                <a href="2022-pn-coverage.html" class="button rounded-0 text-white btn_1 boxed-btn">Event Coverage</a>
               </div>
             </div>
           </div>
@@ -459,10 +459,10 @@
                 action="https://docs.google.com/forms/d/e/1FAIpQLSdXyveCKTvH0uN7NBpECAhVPmaPE0G3cS0cG772StjGXHa3Rw/viewform"
               >
                 <button
-                  class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                  type="submit"
+                  class="button rounded-0 primary-bg text-white w-100 boxed-btn btn_expired"
+                  type="submit" disabled
                 >
-                  Sign Up Now
+                The Event is Over
                 </button>
               </form>
             </div>
@@ -477,12 +477,7 @@
           <div class="col-lg-4">
             <div class="blog_right_sidebar">
               <aside class="single_sidebar_widget search_widget">
-                <h3 class="widget_title">Sign Up Via QR Code</h3>
-                <p><img src="/img/events/SignUpQRCode.jpeg" class="w-100" alt=""></p>
-                </form>
-              </aside>
-              <aside class="single_sidebar_widget search_widget">
-                <h4 class="widget_title">活动合作联系</h4>
+                <h4 class="widget_title">Cooperation Contact</h4>
                 <h4>Amy Ma</h4>
                 <ul>
                   <li><i class="fa fa-user"></i> PN Manager (NZ Session)</li>
@@ -511,7 +506,6 @@
     </section>
     <!--================ Blog Area end =================-->
 
-    <!-- brand_area_start  -->
 
     <!-- footer_start  -->
     <footer class="footer">
