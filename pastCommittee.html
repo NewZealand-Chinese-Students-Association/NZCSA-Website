@@ -227,7 +227,15 @@
 	  @media (max-width: 800px) {
   		.department {
   	 	 flex: 100%;
+		 width: auto !important;
+		 margin:1rem 2% !important;
   		}
+	}
+	.first-line{
+		margin: auto; 
+		display: block;
+		width: 50%;
+		border-radius: 2rem;
 	}
 	  </style>
 	
@@ -311,7 +319,7 @@
 							<div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
 								<img src="img/shape/shape_2.svg" alt="">
 							</div>
-								<h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Past Committes</h3>
+								<h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Committes</h3>
 						  </div>
 					   </div>
 					</div>
@@ -351,11 +359,11 @@
 					</label>
 					<div class="content">
 						<img src="img/pastCommittees/2022.jpeg" style="width: 100%;margin-bottom: 2rem;" alt="">
-						<div class="department" style="margin: auto; display: block; width: 50%; border-radius: 2rem;">
+						<div class="department first-line" >
 							<p class="deptTitle">President Team</p>
 							<p class="committeeName" id="PresidentTeam2022"></p>
 						</div>
-						<div class="department" style="margin: auto; margin-top: 2rem; display: block; width: 50%; border-radius: 1.5rem;">
+						<div class="department first-line" style="margin-top: 2rem;">
 							<p class="deptTitle">Department of Secretary</p>
 							<p class="committeeName"> <span id="dirSec2022"></span><span id="MemSec2022"></span></p>
 
